@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.534 s <<< FAILURE! - in com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationTests
+contextLoads  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'currencyConversionController': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.in28minutes.microservices.currencyconversionservice.CurrencyExchangeProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: PathVariable annotation was empty on param 0.
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.in28minutes.microservices.currencyconversionservice.CurrencyExchangeProxy': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: PathVariable annotation was empty on param 0.
+Caused by: java.lang.IllegalStateException: PathVariable annotation was empty on param 0.
+
