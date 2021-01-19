@@ -39,7 +39,6 @@ public class CircuitBreakerController {
 	@GetMapping("/rate-api")
 	@RateLimiter(name="default")
 	@Bulkhead(name="default")  // This annotation to controll the concurrency service calls
-
 	public String sampleAPI_RateLimiter()
 	{
 		logger.info(" Sample rate limiter Api received the call.....");
